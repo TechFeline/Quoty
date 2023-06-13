@@ -1,0 +1,122 @@
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .header {
+    text-align: center;
+  }
+  
+  .search-container {
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  #searchInput {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  #searchButton {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #searchButton:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .tag-suggestions {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 1;
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+  
+  .tag-suggestions.show {
+    display: block;
+  }
+  
+  .tag-suggestions .tag-suggestion {
+    display: block;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tag-suggestions .tag-suggestion:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .quote-container {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .quote {
+    margin-bottom: 20px;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .quote:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .quote-text {
+    font-size: 24px;
+  }
+  
+  .quote-tags {
+    margin-top: 10px;
+  }
+  
+  .copy-button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .copy-button:hover {
+    background-color: #45a049;
+  }
+  
+  .toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .toast {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .toast.show {
+    opacity: 1;
+  }
+  
