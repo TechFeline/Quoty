@@ -1,12 +1,45 @@
 const quotes = [
-    { text: "The greatest glory in living lies not in never falling, but in rising every time we fall.", tags: ["inspiration", "life"] },
-    { text: "The way to get started is to quit talking and begin doing.", tags: ["motivation", "action"] },
-    { text: "Your time is limited, don't waste it living someone else's life.", tags: ["life", "wisdom"] },
-    { text: "If life were predictable it would cease to be life, and be without flavor.", tags: ["life", "uncertainty"] },
-    { text: "Life is what happens when you're busy making other plans.", tags: ["life", "surprises"] },
-    { text: "The only limit to our realization of tomorrow will be our doubts of today.", tags: ["future", "doubts"] },
-    { text: "In the end, it's not the years in your life that count. It's the life in your years.", tags: ["life", "perspective"] },
-  ];
+  {
+    text: "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+    tags: ["inspiration", "life"],
+  },
+  {
+    text: "The way to get started is to quit talking and begin doing.",
+    tags: ["motivation", "action"],
+  },
+  {
+    text: "Your time is limited, don't waste it living someone else's life.",
+    tags: ["life", "wisdom"],
+  },
+  {
+    text: "If life were predictable it would cease to be life, and be without flavor.",
+    tags: ["life", "uncertainty"],
+  },
+  {
+    text: "Life is what happens when you're busy making other plans.",
+    tags: ["life", "surprises"],
+  },
+  {
+    text: "The only limit to our realization of tomorrow will be our doubts of today.",
+    tags: ["future", "doubts"],
+  },
+  {
+    text: "In the end, it's not the years in your life that count. It's the life in your years.",
+    tags: ["life", "perspective"],
+  },
+  {
+    text: "It is during our darkest moments that we must focus to see the light",
+    tags: ["life", "philosophy"],
+  },
+  {
+    text: "Do not go where the path may lead, go instead where there is no path and leave a trail..",
+    tags: ["life", "purpose"],
+  },
+  {
+    text: "Life is either a daring adventure or nothing at all.",
+    tags: ["life", "adventure"],
+  },
+];
   
   function searchQuotes() {
     const searchInput = document.getElementById("searchInput");
@@ -43,6 +76,7 @@ const quotes = [
         quoteTagsElement.classList.add("quote-tags");
         quote.tags.forEach(tag => {
           const tagElement = document.createElement("span");
+          tagElement.classList.add("bracket");
           tagElement.textContent = tag;
           quoteTagsElement.appendChild(tagElement);
         });

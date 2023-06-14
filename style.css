@@ -21,9 +21,9 @@
   
   #searchButton {
     position: absolute;
-    right: 0;
-    top: 0;
-    padding: 10px;
+    right: 2px;
+    top: 2px;
+    padding: 10px 15px;
     background-color: #f8f8f8;
     border: none;
     font-size: 16px;
@@ -86,6 +86,15 @@
   .quote-tags {
     margin-top: 10px;
   }
+
+  .bracket {
+    padding: 2px 7px;
+    font-size: 12px;
+    margin-right: 5px;
+    border-radius: 30px;
+    color: #fff;
+    background-color: #97c298;
+  }
   
   .copy-button {
     padding: 10px 20px;
@@ -95,6 +104,7 @@
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top: 10px;
   }
   
   .copy-button:hover {
